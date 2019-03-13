@@ -1,25 +1,10 @@
 #!/bin/bash -eax
 
-# Start Database
-#docker run -d --name kong-database \
-    #--rm \
-    #-p 5432:5432 \
-    #-e "POSTGRES_USER=kong" \
-    #-e "POSTGRES_DB=kong" \
-    #postgres:9.6
-
-## Run Migrations
-#docker run --rm \
-    #--link kong-database:kong-database \
-    #-e "KONG_DATABASE=postgres" \
-    #-e "KONG_PG_HOST=kong-database" \
-    #-e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
-    #kong kong migrations bootstrap
-
 # Run Kong
 docker run --name kong \
    --rm \
    --link kong-database:kong-database \
+   --link server-python:server-python \
    -e "KONG_DATABASE=postgres" \
    -e "KONG_PG_HOST=kong-database" \
    -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \

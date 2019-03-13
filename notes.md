@@ -31,8 +31,6 @@
 ## Canary Releasing / Green Blue Deployments
 ## Header Augmentation
 
-
-
 # Technologies
 
 ## off the shelf
@@ -74,6 +72,12 @@
    Bunk see's 400k r/s
    This decreases as plugins are added
 
+Under active development, Kong is now used in production at hundreds of organizations 
+from startups, to large enterprises and governments including: The New York Times,
+Expedia, Healthcare.gov, The Guardian, Condè Nast, The University of Auckland, 
+Ferrari, Rakuten, Cisco, SkyScanner, Yahoo! Japan, Giphy and so on.
+
+
 ### APIGee
    Founded in 2004
    Aquired by Google in 2016
@@ -104,6 +108,7 @@
  Good Benchmarks
  Backed by etcd
  Middleware written in Go
+ Run at mailgun
 
 ### AWS API Gateway
   Doesnt work in eu1.prod

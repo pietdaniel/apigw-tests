@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker build ./ --tag server-python
+docker build ./ --tag server-python
