@@ -1,0 +1,3 @@
+[submodule "krakend/krakend-playground"]
+	path = krakend/krakend-playground
+	url = git@github.com:devopsfaith/krakend-playground.git
